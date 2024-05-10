@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.View.AdminView.CreateGroupModalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.View.AdminView"
+        mc:Ignorable="d"
+        Title="Создание новой группы" Height="250" Width="400" WindowStartupLocation="CenterScreen">
+    <StackPanel Width="200" VerticalAlignment="Center">
+        <Label Content="Название группы" />
+        <TextBox x:Name="GroupNameTextBox" />
+
+        <Label Content="Имя куратора" />
+        <TextBox x:Name="CuratorFirstNameTextBox" />
+
+        <Label Content="Фамилия куратора" />
+        <TextBox x:Name="CuratorLastNameTextBox" />
+
+        <Button Content="Создать группу" Margin="10" Click="CreateGroupButton_Clicked" />
+    </StackPanel>
+</Window>
